@@ -1,5 +1,5 @@
 body {
-  font-family: sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   text-align: center;
   background-color: #f0f8ff;
   padding: 20px;
@@ -13,6 +13,10 @@ button {
   color: white;
   border-radius: 5px;
   cursor: pointer;
+}
+
+#donation-line button{
+  text-decoration: none;
 }
 
 button:hover {

@@ -9,7 +9,7 @@
   <h1>🌿 Mindful Moments</h1>
   <p>How are you feeling today?</p>
 
-  <div class="buttons">
+  <div id="btn-wrapper" class="buttons">
     <button onclick="showMessage('happy')">Happy</button>
     <button onclick="showMessage('sad')">Sad</button>
     <button onclick="showMessage('anxious')">Anxious</button>
@@ -19,13 +19,14 @@
 
   <p id="message"></p>
 
-  <h3>🌐 Resources:</h3>
-  <ul>
-    <li><a href="https://mentalhealthph.org" target="_blank">MentalHealthPH</a></li>
-    <li><a href="https://mindnation.com" target="_blank">MindNation</a></li>
-    <li>☎ 0917-TALK-HELP</li>
-  </ul>
-
+  <h3 id="resources">🌐 Resources:</h3>
+  <div id="donation-line">
+    <ul>
+      <li><a href="https://mentalhealthph.org" target="_blank">MentalHealthPH</a></li>
+      <li><a href="https://mindnation.com" target="_blank">MindNation</a></li>
+      <li>☎ 0917-TALK-HELP</li>
+    </ul>
+  </div>
   <h3>💖 Support Mental Health:</h3>
   <p>Donate via GCash: <strong>0917-xxx-xxxx</strong></p>
 </body>
