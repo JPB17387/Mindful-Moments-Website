@@ -6,6 +6,6 @@ function showMessage(mood) {
     tired: "Rest is also productive. Be kind to yourself.",
     motivated: "Great! Use your energy to help someone today!"
   };
-  
+
   document.getElementById("message").textContent = messages[mood];
 }

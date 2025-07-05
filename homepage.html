@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mindful Moments</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>🌿 Mindful Moments</h1>
-  <p>How are you feeling today?</p>
+  <div class="container">
+    <h1>🌿 Mindful Moments</h1>
+    <p class="tagline">Small check-ins. Big peace of mind.</p>
 
-  <div id="btn-wrapper" class="buttons">
-    <button onclick="showMessage('happy')">Happy</button>
-    <button onclick="showMessage('sad')">Sad</button>
-    <button onclick="showMessage('anxious')">Anxious</button>
-    <button onclick="showMessage('tired')">Tired</button>
-    <button onclick="showMessage('motivated')">Motivated</button>
+    <div class="card">
+      <p>How are you feeling today?</p>
+      <div class="buttons">
+        <button onclick="showMessage('happy')">😊 Happy</button>
+        <button onclick="showMessage('sad')">😢 Sad</button>
+        <button onclick="showMessage('anxious')">😰 Anxious</button>
+        <button onclick="showMessage('tired')">😴 Tired</button>
+        <button onclick="showMessage('motivated')">💪 Motivated</button>
+      </div>
+      <p id="message" class="message-box"></p>
+    </div>
+
+    <div class="resources">
+      <h3>🌐 Resources:</h3>
+      <ul>
+        <li><a href="https://mentalhealthph.org" target="_blank">MentalHealthPH</a></li>
+        <li><a href="https://mindnation.com" target="_blank">MindNation</a></li>
+        <li>📞 0917-TALK-HELP (24/7 Hotline)</li>
+      </ul>
+
+      <h3>💖 Support Mental Health:</h3>
+      <p>Donate via GCash: <strong>0917-XXX-XXXX</strong></p>
+    </div>
   </div>
 
-  <p id="message"></p>
-
-  <h3 id="resources">🌐 Resources:</h3>
-  <div id="donation-line">
-    <ul>
-      <li><a href="https://mentalhealthph.org" target="_blank">MentalHealthPH</a></li>
-      <li><a href="https://mindnation.com" target="_blank">MindNation</a></li>
-      <li>☎ 0917-TALK-HELP</li>
-    </ul>
-  </div>
-  <h3>💖 Support Mental Health:</h3>
-  <p>Donate via GCash: <strong>0917-xxx-xxxx</strong></p>
-  <script src="functionality.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

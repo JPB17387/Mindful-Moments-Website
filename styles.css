@@ -1,29 +1,79 @@
 body {
-  font-family: 'Times New Roman', Times, serif;
-  text-align: center;
-  background-color: #f0f8ff;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
   padding: 20px;
 }
 
+.container {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #00f7ff;
+}
+
+.tagline {
+  font-style: italic;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  padding: 30px 20px;
+  margin-bottom: 30px;
+}
+
 button {
+  background: transparent;
+  border: 1px solid #00f7ff;
+  color: #00f7ff;
   margin: 5px;
-  padding: 10px 20px;
-  border: none;
-  background-color: #7ec8e3;
-  color: white;
-  border-radius: 5px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 
-#donation-line button{
+button:hover {
+  background: #00f7ff;
+  color: #0f0c29;
+  transform: scale(1.05);
+}
+
+.message-box {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.resources {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 0.95rem;
+}
+
+a {
+  color: #00f7ff;
   text-decoration: none;
 }
 
-button:hover {
-  background-color: #5aaed6;
-}
-
-#message {
-  font-size: 1.2em;
-  margin-top: 20px;
+a:hover {
+  text-decoration: underline;
 }
