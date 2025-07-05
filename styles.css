@@ -77,3 +77,19 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+.typing-effect {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #00f7ff;
+  animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+  0% { border-color: transparent; }
+  50% { border-color: #00f7ff; }
+  100% { border-color: transparent; }
+}

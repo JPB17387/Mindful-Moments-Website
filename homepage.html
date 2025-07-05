@@ -4,15 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mindful Moments</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
   <div class="container">
-    <h1>🌿 Mindful Moments</h1>
-    <p class="tagline">Small check-ins. Big peace of mind.</p>
+    <h1 data-aos="zoom-in">🌿 Mindful Moments</h1>
+    <p class="tagline" id="typing" class="typing-effect">Small check-ins. Big peace of mind.</p>
 
-    <div class="card">
+    <div class="card" data-aos="fade-up">
       <p>How are you feeling today?</p>
       <div class="buttons">
         <button onclick="showMessage('happy')">😊 Happy</button>
@@ -24,7 +25,7 @@
       <p id="message" class="message-box"></p>
     </div>
 
-    <div class="resources">
+    <div class="resources" data-aos="fade-down">
       <h3>🌐 Resources:</h3>
       <ul>
         <li><a href="https://mentalhealthph.org" target="_blank">MentalHealthPH</a></li>
@@ -37,6 +38,11 @@
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="functionality.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </body>
 </html>

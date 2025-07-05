@@ -9,3 +9,15 @@ function showMessage(mood) {
 
   document.getElementById("message").textContent = messages[mood];
 }
+
+const text = "Small check-ins. Big peace of mind.";
+let i = 0;
+
+function typeEffect() {
+  if (i < text.length) {
+    document.getElementById("typing").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeEffect, 90); // typing speed
+  }
+}
+window.onload = typeEffect;
