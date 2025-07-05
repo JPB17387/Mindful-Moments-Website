@@ -26,14 +26,32 @@ function toggleMode() {
   const body = document.body;
   const toggleBtn = document.getElementById("themeToggle");
 
+  // Toggle the light mode class
   body.classList.toggle("light-mode");
 
-  // Change the icon depending on the mode
+  // Check and update the icon
   if (body.classList.contains("light-mode")) {
-    toggleBtn.textContent = "☀️"; // Light mode icon
+    toggleBtn.textContent = "☀️";
+    localStorage.setItem("theme", "light");
   } else {
-    toggleBtn.textContent = "🌙"; // Dark mode icon
+    toggleBtn.textContent = "🌙";
+    localStorage.setItem("theme", "dark");
   }
 }
+
+// ✅ On page load, apply saved theme
+window.onload = function () {
+  const savedTheme = localStorage.getItem("theme");
+  const body = document.body;
+  const toggleBtn = document.getElementById("themeToggle");
+
+  if (savedTheme === "light") {
+    body.classList.add("light-mode");
+    toggleBtn.textContent = "☀️";
+  } else {
+    body.classList.remove("light-mode");
+    toggleBtn.textContent = "🌙";
+  }
+};
 
 
