@@ -18,12 +18,14 @@ body {
 }
 
 h1 {
+  align-self: center;
   font-size: 2.5rem;
   margin-bottom: 10px;
   color: #00f7ff;
 }
 
 .tagline {
+  align-self: center;
   font-style: italic;
   color: #ccc;
   margin-bottom: 20px;
