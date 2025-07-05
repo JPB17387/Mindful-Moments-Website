@@ -17,7 +17,23 @@ function typeEffect() {
   if (i < text.length) {
     document.getElementById("typing").innerHTML += text.charAt(i);
     i++;
-    setTimeout(typeEffect, 90); // typing speed
+    setTimeout(typeEffect, 120); // typing speed
   }
 }
 window.onload = typeEffect;
+
+function toggleMode() {
+  const body = document.body;
+  const toggleBtn = document.getElementById("themeToggle");
+
+  body.classList.toggle("light-mode");
+
+  // Change the icon depending on the mode
+  if (body.classList.contains("light-mode")) {
+    toggleBtn.textContent = "☀️"; // Light mode icon
+  } else {
+    toggleBtn.textContent = "🌙"; // Dark mode icon
+  }
+}
+
+

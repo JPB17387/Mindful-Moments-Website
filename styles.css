@@ -93,3 +93,69 @@ a:hover {
   50% { border-color: #00f7ff; }
   100% { border-color: transparent; }
 }
+
+.toggle-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #222;
+  color: #fff;
+  border: 1px solid #00f7ff;
+  padding: 5px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.light-mode {
+  background: #f2f2f2;
+  color: #111;
+}
+
+.light-mode h1,
+.light-mode h2,
+.light-mode p,
+.light-mode ul,
+.light-mode li,
+.light-mode a,
+.light-mode .tagline,
+.light-mode .message-box {
+  color: #111 !important;
+}
+
+.light-mode a {
+  color: #0055aa;
+}
+
+.light-mode .card,
+.light-mode .resources {
+  background: rgba(0, 0, 0, 0.05);
+  color: #111;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.light-mode button {
+  background: transparent;
+  border: 1px solid #0055aa;
+  color: #0055aa;
+}
+
+.light-mode button:hover {
+  background: #0055aa;
+  color: #fff;
+}
+
+
+.light-mode .card,
+.light-mode .resources {
+  background: rgba(0, 0, 0, 0.05);
+  color: #222;
+}
+
+body {
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+.toggle-btn {
+  transition: all 0.3s ease;
+}
