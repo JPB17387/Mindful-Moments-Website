@@ -26,22 +26,16 @@ This is my first hackathon project. I wanted to build something meaningful, acce
 ## 🧪 How to Run
 
 1. Clone or download the repository
-2. Open `homepage.html` in your browser
-3. That’s it! No build tools or installations needed.
+2. Open it in VSCODE and hit open with LIVE SERVER or just simply open the folder and open the homepage.html. 
+3. And that’s it! Open with VSCODE is optional.
 
 ## 📸 Screenshots
-
-### Desktop View
-![Screenshot - Desktop](screenshots/desktop.png)
-
-### Mobile View
-![Screenshot - Mobile](screenshots/mobile.png)
 
 ## 📬 Contact
 
 **Developed by:** Jhon Paul Baonil  
-Email: your-email@example.com (optional)  
-GitHub: [yourusername](https://github.com/yourusername)
+Email: paulbaonil@gmail.com (optional)  
+GitHub: [JPB17387](https://github.com/JPB17387)
 
 ---
 
