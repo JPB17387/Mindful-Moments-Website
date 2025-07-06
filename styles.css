@@ -67,6 +67,12 @@ button:hover {
   font-size: 1.2rem;
   margin-top: 20px;
   color: #fff;
+  transition: opacity 1s ease-in-out;
+  animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 .resources {
@@ -216,3 +222,14 @@ body {
 .card:hover, .resources:hover {
   box-shadow: 0 0 20px rgba(0, 247, 255, 0.7), 0 0 40px rgba(0, 247, 255, 0.5);
 }
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 0.85rem;
+  color: #888;
+}
+.light-mode footer {
+  color: #444;
+}
+
