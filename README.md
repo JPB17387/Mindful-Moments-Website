@@ -40,8 +40,8 @@ This is my first hackathon project. I wanted to build something meaningful, acce
 ## 📬 Contact
 
 **Developed by:** Jhon Paul Baonil  
-Email: your-email@example.com (optional)  
-GitHub: [yourusername](https://github.com/yourusername)
+Email: paulbaonil@gmail.com (optional)  
+GitHub: [JPB17387](https://github.com/JPB17387)
 
 ---
 
