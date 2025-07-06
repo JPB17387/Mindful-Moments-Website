@@ -41,22 +41,27 @@ h1 {
   margin-bottom: 30px;
 }
 
+/* Base mood buttons */
 button {
-  background: transparent;
-  border: 1px solid #00f7ff;
-  color: #00f7ff;
   margin: 5px;
   padding: 10px 15px;
+  border: none;
+  background: transparent;
+  color: #00f7ff;
+  border: 1px solid #00f7ff;
   border-radius: 10px;
-  transition: all 0.3s ease;
   cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 8px #00f7ff;
 }
 
+/* Hover Glow */
 button:hover {
   background: #00f7ff;
   color: #0f0c29;
-  transform: scale(1.05);
+  box-shadow: 0 0 15px #00f7ff, 0 0 30px #00f7ff;
 }
+
 
 .message-box {
   font-size: 1.2rem;
@@ -114,6 +119,20 @@ a:hover {
 .light-mode .message-box {
   color: #111 !important;
 }
+
+.light-mode button {
+  background: transparent;
+  color: #0055aa;
+  border: 1px solid #0055aa;
+  box-shadow: 0 0 5px #0055aa;
+}
+
+.light-mode button:hover {
+  background: #0055aa;
+  color: white;
+  box-shadow: 0 0 15px #0055aa, 0 0 30px #0055aa;
+}
+
 
 .light-mode a {
   color: #0055aa;

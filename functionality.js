@@ -1,3 +1,4 @@
+//Show the messages function
 function showMessage(mood) {
   const messages = {
     happy: "Keep smiling and spread that good energy!",
@@ -10,6 +11,7 @@ function showMessage(mood) {
   document.getElementById("message").textContent = messages[mood];
 }
 
+//toggle button
 function toggleMode() {
   const body = document.body;
   const toggleBtn = document.getElementById("themeToggle");
