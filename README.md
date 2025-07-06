@@ -29,8 +29,6 @@ This is my first hackathon project. I wanted to build something meaningful, acce
 2. Open it in VSCODE and hit open with LIVE SERVER or just simply open the folder and open the homepage.html. 
 3. And that’s it! Open with VSCODE is optional.
 
-## 📸 Screenshots
-
 ## 📬 Contact
 
 **Developed by:** Jhon Paul Baonil  
